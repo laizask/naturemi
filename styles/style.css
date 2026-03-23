@@ -650,3 +650,76 @@ html {
   line-height: 1.4;
   text-align: left;
 }
+
+
+/* Para Tablets e Celulares (Telas menores que 768px) */
+@media (max-width: 768px) {
+    
+    /* 1. Ajuste do Header e Título */
+    .menu-container {
+        flex-direction: column; /* Empilha a logo e o menu */
+        gap: 10px;
+    }
+
+    .navegacao {
+        gap: 15px; /* Diminui o espaço entre links */
+        flex-wrap: wrap; /* Permite quebrar linha se não couber */
+    }
+
+    .titulo {
+        font-size: 28px; /* Diminui o título da marca */
+        margin-top: 10px;
+    }
+
+    body {
+        margin-top: 180px; /* Ajuste conforme a nova altura do header */
+    }
+
+    /* 2. Seção Principal (Fundo1) */
+    .fundo1 {
+        flex-direction: column; /* Empilha o texto sobre a imagem */
+        text-align: center;
+        height: auto;
+        padding: 4rem 1rem;
+        gap: 2rem;
+    }
+
+    .sobre {
+        max-width: 100%; /* Ocupa a largura toda no celular */
+        margin-right: 0;
+        padding: 1rem;
+    }
+
+    /* 3. Seção de Receitas */
+    .receitas {
+        padding: 40px 15px;
+    }
+
+    .receitas h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .receitas-lista {
+        margin-left: 0;
+        margin-right: 0;
+        gap: 15px;
+    }
+
+    /* 4. Carrinho/Painel */
+    .painel-carrinho {
+        width: 100%; /* Ocupa a tela toda no celular */
+        right: -100%;
+    }
+}
+
+/* Para Celulares Pequenos (Telas menores que 480px) */
+@media (max-width: 480px) {
+    .navegacao li a {
+        font-size: 11px;
+    }
+    
+    .receita {
+        width: 140px; /* Miniaturas menores */
+    }
+}
