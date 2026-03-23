@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" href="/assets/favicon.png" type="image/png">
+    <title>Naturemi</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <span class="titulo">Naturemi.</span>
+            
+            <div class="menu-container">
+                <ul class="navegacao">
+                    <li><a href="#sobre">sobre</a></li>
+                    <li><a href="#cardapio">cardápio</a></li>
+                </ul>
+
+                <a href="https://wa.me/5541985334490?text=Oi!%20Conheci%20a%20Naturemi%20pelo%20site%20e%20fiquei%20interessada%20nas%20opções%20saudáveis%20🌱
+"
+                target="_blank">
+
+                <button class="wpp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </button>
+
+                </a>
+
+                <div class="carrinho-topo" onclick="abrirCarrinho()">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="contador-carrinho">0</span>
+            </div>
+
+                </div>
+
+            <div class="bordao">
+                <h4>confeitaria saudável e inclusiva</h4>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="fundo1">
+
+        <section class="sobre" id="sobre">
+            <h1>Naturemi</h1>
+            <p>Cada receita é feita com carinho para nutrir corpo e alma, e ter você com a gente torna tudo ainda mais especial. Na naturemi, cada detalhe é pensado para oferecer sabor, saúde e equilíbrio. Que nossas receitas saudáveis façam parte dos seus melhores momentos.</p>
+        </section>
+
+        </div>
+
+    <main>
+            <section class="receitas" id="cardapio">
+                <div class="receitas-topo">
+                <h2>cardapinho</h2>
+                <div class="botoes-navegacao">
+                <button class="botao-esquerda"><i class="fa-solid fa-circle-chevron-left"></i></button>
+                <button class="botao-direita"><i class="fa-solid fa-circle-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="receitas-lista">
+            <div class="receita">
+                <img src="/styles/images/brownie.png" alt="Brownie">
+                <div class="titulo-preco">
+                <h3>brownie</h3>
+                <strong class="preco">R$12,00</strong>
+                </div>
+                <button class="comprar" 
+                onclick="adicionarItem('Brownie', 12)">
+                    Selecionar
+                </button>
+
+                <div class="controle-quantidade">
+                <button class="menos">−</button>
+                <strong class="quantidade">1</strong>
+                <button class="mais">+</button>
+                </div>
+
+                <p class="descricao">
+                chocolate intenso com textura macia por dentro, feito com ingredientes naturais e sem lactose
+                </p>
+
+                <div class="selo sem-lactose">
+                    <img src="/styles/images/sem-lactose.png" alt="Sem lactose">
+                </div>
+
+                <div class="selo sem-gluten">
+                    <img src="/styles/images/sem-gluten.png" alt="Sem glúten">
+                </div>
+
+                <div class="selo vegano">
+                    <img src="/styles/images/ecologia.png" alt="Vegano">
+                </div>
+            </div>
+
+            <div class="receita">
+                <img src="/styles/images/empadinha.png" alt="Empadinha">
+                <div class="titulo-preco">
+                <h3>empadinha de frango</h3> 
+                <strong class="preco">R$8,00</strong>
+                </div>
+                <button class="comprar" data-nome="Empadinha" data-preco="8">
+                    Selecionar</button>
+
+                <div class="controle-quantidade">
+                <button class="menos">−</button>
+                <strong class="quantidade">1</strong>
+                <button class="mais">+</button>
+                </div>
+
+                <p class="descricao">
+                massa leve e delicada com recheio cremoso de frango temperado, sem glúten e sem lactose
+                </p>
+
+
+                <div class="selo sem-lactose">
+                    <img src="/styles/images/sem-lactose.png" alt="Sem lactose">
+                </div>
+
+                <div class="selo sem-gluten">
+                    <img src="/styles/images/sem-gluten.png" alt="Sem glúten">
+                </div>
+                 
+            </div>
+
+            <div class="receita">
+                <img src="/styles/images/mouse.png" alt="Mousse">
+                <div class="titulo-preco">
+                <h3>mousse de chocolate</h3> 
+                <strong class="preco">R$6,00</strong>
+                </div>
+                <button class="comprar" data-nome="Mousse" data-preco="6">Selecionar</button>
+                
+                <div class="controle-quantidade">
+                <button class="menos">−</button>
+                <strong class="quantidade">1</strong>
+                <button class="mais">+</button>
+                </div>
+
+                <p class="descricao">
+                cremoso, leve e aerado, com sabor marcante de chocolate e ingredientes naturais
+                </p>
+
+                <div class="selo sem-lactose">
+                    <img src="/styles/images/sem-lactose.png" alt="Sem lactose">
+                </div>
+
+                <div class="selo sem-gluten">
+                    <img src="/styles/images/sem-gluten.png" alt="Sem glúten">
+                </div>
+
+                <div class="selo vegano">
+                    <img src="/styles/images/ecologia.png" alt="Vegano">
+                </div>
+            </div>
+
+            <div class="receita">
+                <img src="/styles/images/boolo.png" alt="Bolo">
+                <div class="titulo-preco">
+                <h3>bolo de pote</h3>
+                <strong class="preco">R$11,00</strong>
+                </div>
+                <button class="comprar" data-nome="Bolo" data-preco="11">Selecionar</button>
+
+                <div class="controle-quantidade">
+                <button class="menos">−</button>
+                <strong class="quantidade">1</strong>
+                <button class="mais">+</button>
+                </div>
+                <p class="descricao">
+                camadas fofinhas com recheio suave, perfeito para um doce equilibrado e aconchegante
+                </p>
+
+                <div class="selo sem-lactose">
+                    <img src="/styles/images/sem-lactose.png" alt="Sem lactose">
+                </div>
+
+                <div class="selo sem-gluten">
+                    <img src="/styles/images/sem-gluten.png" alt="Sem glúten">
+                </div>
+
+                <div class="selo vegano">
+                    <img src="/styles/images/ecologia.png" alt="Vegano">
+                </div>
+            </div>
+
+            <div class="receita">
+                <img src="/styles/images/cookie.png" alt="Cookie">
+                <div class="titulo-preco">
+                <h3>Cookies</h3>
+                <strong class="preco">R$8,00</strong>
+                </div>
+                <button class="comprar" data-nome="Cookie" data-preco="8">Selecionar</button>
+
+                <div class="controle-quantidade">
+                <button class="menos">−</button>
+                <strong class="quantidade">1</strong>
+                <button class="mais">+</button>
+                </div>
+                <p class="descricao">
+                crocante por fora e macio por dentro, com toque artesanal e sabor caseiro
+                </p>
+
+                <div class="selo vegano">
+                    <img src="/styles/images/ecologia.png" alt="Vegano">
+                </div>
+
+                
+            </div>
+
+            <div class="receita">
+                <img src="/styles/images/brigadeiro_615x500px.png" alt="Brigadeiro">
+                <div class="titulo-preco">
+                <h3>Brigadeiro</h3>
+                <strong class="preco">R$5,00</strong>
+                </div>
+                <button class="comprar" data-nome="Brigadeiro" data-preco="8">Selecionar</button>
+
+                <div class="controle-quantidade">
+                <button class="menos">−</button>
+                <strong class="quantidade">1</strong>
+                <button class="mais">+</button>
+                </div>
+
+                <p class="descricao">
+                clássico brasileiro em versão mais leve, cremoso e feito com ingredientes selecionados
+                </p>
+
+                <div class="selo vegano">
+                    <img src="/styles/images/ecologia.png" alt="Vegano">
+                </div>
+
+            </div>
+
+                        <div class="receita">
+                <img src="/styles/images/pngtree-caramel-custard-pudding-png-image_11712795.png" alt="Pudim">
+                <div class="titulo-preco">
+                <h3>Pudim</h3>
+                <strong class="preco">R$9,00</strong>
+                </div>
+                <button class="comprar" data-nome="Pudim" data-preco="8">Selecionar</button>
+
+                <div class="controle-quantidade">
+                <button class="menos">−</button>
+                <strong class="quantidade">1</strong>
+                <button class="mais">+</button>
+                </div>
+                <p class="descricao">
+                textura lisa e delicada com calda suave, uma versão leve do tradicional
+                </p>
+
+                <div class="selo vegano">
+                    <img src="/styles/images/ecologia.png" alt="Vegano">
+                </div>
+
+                <div class="selo sem-lactose">
+                    <img src="/styles/images/sem-lactose.png" alt="Sem lactose">
+                </div>
+
+                <div class="selo sem-gluten">
+                    <img src="/styles/images/sem-gluten.png" alt="Sem glúten">
+                </div>
+
+            </div>
+
+                        <div class="receita">
+                <img src="/styles/images/palha-italiana-png-3-Transparent-Images.png" alt="Palha">
+                <div class="titulo-preco">
+                <h3>Palha italiana</h3>
+                <strong class="preco">R$10,00</strong>
+                </div>
+                <button class="comprar" data-nome="Palha" data-preco="8">Selecionar</button>
+
+                <div class="controle-quantidade">
+                <button class="menos">−</button>
+                <strong class="quantidade">1</strong>
+                <button class="mais">+</button>
+                </div>
+                <p class="descricao">
+                combinação perfeita de chocolate com crocância, equilibrado e irresistível
+                </p>
+
+                <div class="selo vegano">
+                    <img src="/styles/images/ecologia.png" alt="Vegano">
+                </div>
+
+                <div class="selo sem-lactose">
+                    <img src="/styles/images/sem-lactose.png" alt="Sem lactose">
+                </div>
+
+                <div class="selo sem-gluten">
+                    <img src="/styles/images/sem-gluten.png" alt="Sem glúten">
+                </div>
+
+            </div>
+
+                        <div class="receita">
+                <img src="/styles/images/torta.jpg" alt="Tortinha de morango">
+                <div class="titulo-preco">
+                <h3>Tortinha de morango</h3>
+                <strong class="preco">R$12,00</strong>
+                </div>
+                <button class="comprar" data-nome="Tortinha de morango" data-preco="8">Selecionar</button>
+
+                <div class="controle-quantidade">
+                <button class="menos">−</button>
+                <strong class="quantidade">1</strong>
+                <button class="mais">+</button>
+                </div>
+                <p class="descricao">
+                base delicada com creme suave e morangos frescos, leve e refrescante
+                </p>
+
+                <div class="selo vegano">
+                    <img src="/styles/images/ecologia.png" alt="Vegano">
+                </div>
+
+                <div class="selo sem-gluten">
+                    <img src="/styles/images/sem-gluten.png" alt="Sem glúten">
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    </main>
+
+
+<footer class="footer">
+    <div class="footer-container">
+
+    <div class="footer-instagram">
+<div class="insta-info">
+  <div class="insta-top">
+    <i class="fa-brands fa-instagram"></i>
+    <p class="insta-name">Naturemi</p>
+  </div>
+
+  <p class="insta-text">estamos no instagram</p>
+</div>
+
+    <a 
+        href="https://www.instagram.com/naturemisaudavel/"
+        target="_blank"
+        class="insta-link"
+    >
+        siga-nos
+    </a>
+    </div>
+    </div>
+
+
+<div class="footer-bottom">
+  <span class="footer-copy">
+    © 2026 Naturemi • feito com carinho e ingredientes naturais 🌱
+  </span>
+</div>
+</footer>
+</body>
+
+<div class="overlay" onclick="fecharCarrinho()"></div>
+
+<div class="painel-carrinho">
+
+  <div class="header-carrinho">
+    <h3>Seu Carrinho</h3>
+    <button class="fechar-carrinho" onclick="fecharCarrinho()">
+  <i class="fa-solid fa-xmark"></i>
+</button>
+  </div>
+
+  <div id="lista-carrinho"></div>
+
+  <div class="carrinho-total">
+    Total: <span id="total">R$ 0,00</span>
+  </div>
+
+  <div class="tipo-entrega">
+    <p>Como deseja receber?</p>
+
+    <label>
+      <input type="radio" name="entrega" value="Retirada">
+      Retirada
+    </label>
+
+    <label>
+      <input type="radio" name="entrega" value="Entrega">
+      Entrega
+    </label>
+  </div>
+
+  <div class="campo-endereco">
+    <input type="text" id="endereco" placeholder="Rua e número">
+    <input type="text" id="bairro" placeholder="Bairro">
+  </div>
+
+  <div class="tipo-pagamento">
+    <p>Forma de pagamento</p>
+
+    <label><input type="radio" name="pagamento" value="Pix"> Pix</label>
+    <label><input type="radio" name="pagamento" value="Dinheiro"> Dinheiro</label>
+    <label><input type="radio" name="pagamento" value="Cartão"> Cartão</label>
+  </div>
+
+  <button class="finalizar-pedido" onclick="enviarWhats()">
+    Finalizar pelo WhatsApp
+  </button>
+
+    <button class="finalizar-pedido" onclick="enviarIfood()">
+    Pedir via ifood
+  </button>
+    <script src="/pages/script.js"></script>
+</div>
+</html>
