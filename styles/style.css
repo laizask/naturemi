@@ -723,3 +723,65 @@ html {
         width: 140px; /* Miniaturas menores */
     }
 }
+/* --- ESTILOS PARA CELULAR (ATÉ 768px) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Layout da Seção e Título */
+    .receitas h2 {
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .receitas-lista {
+        display: flex;
+        flex-direction: column; /* Empilha os cards */
+        align-items: center;
+        overflow-x: visible;    /* Cancela o scroll lateral */
+        margin: 0;
+        gap: 25px;              /* Espaço entre os pratos */
+    }
+
+    .botoes-navegacao {
+        display: none;          /* Esconde as setas de scroll lateral */
+    }
+
+    /* 2. O Card (Receita) */
+    .receita {
+        width: 90%;
+        max-width: 350px;
+        position: relative;     /* Base para os selos absolutos */
+        flex: unset;
+    }
+
+    .receita img {
+        width: 100%;
+        height: auto;
+        max-height: 220px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    /* 3. Ajuste dos Selos (Ícones) */
+    .selo {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: flex;
+        flex-direction: column; /* Faz os selos ficarem um abaixo do outro */
+        gap: 8px;               /* Distância entre os ícones */
+        z-index: 10;
+        width: auto;            /* Garante que o container não estique */
+    }
+
+    /* Reset crucial: cancela as posições fixas do CSS original */
+    .selo img, 
+    .sem-lactose, 
+    .sem-gluten, 
+    .vegano { 
+        position: static !important; 
+        width: 22px !important;
+        height: 22px !important;
+        margin: 0 !important;
+    }
+}
