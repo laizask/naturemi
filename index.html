@@ -364,6 +364,23 @@
   </span>
 </div>
 </footer>
+
+<section class="feedback-section">
+    <div class="feedback-container">
+        <h3>Sua opinião é importante!</h3>
+        <p>Conte-nos o que achou das nossas receitas ou do atendimento.</p>
+        
+        <form action="https://formspree.io/f/xbdznyqe" method="POST" id="form-feedback">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail (para respondermos)" required>
+            <textarea name="mensagem" placeholder="Escreva seu feedback aqui..." rows="4" required></textarea>
+            
+            <button type="submit" class="btn-enviar">Enviar Feedback</button>
+            <input type="hidden" name="_next" value="https://naturemi.onrender.com/">
+        </form>
+    </div>
+</section>
+
 </body>
 
 <div class="overlay" onclick="fecharCarrinho()"></div>

@@ -263,3 +263,40 @@ function fecharCarrinho() {
   document.querySelector(".painel-carrinho").classList.remove("ativo");
   document.querySelector(".overlay").classList.remove("ativo");
 }
+
+const formularioFeedback = document.getElementById('form-feedback');
+
+// O '?' ou o 'if' evitam que o código quebre se o formulário não for encontrado
+if (formularioFeedback) {
+  formularioFeedback.addEventListener('submit', async function(event) {
+    event.preventDefault();
+
+    const botao = this.querySelector('.btn-enviar');
+    const textoOriginal = botao.innerText;
+    
+    botao.innerText = "Enviando...";
+    botao.disabled = true;
+
+    const dados = new FormData(this);
+
+    try {
+      const response = await fetch(this.action, {
+        method: this.method,
+        body: dados,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        alert('Oba! Recebemos seu feedback. Muito obrigado!');
+        this.reset();
+      } else {
+        alert('Ops! Algo deu errado no envio.');
+      }
+    } catch (error) {
+      alert('Erro de conexão. Verifique sua internet.');
+    } finally {
+      botao.innerText = textoOriginal;
+      botao.disabled = false;
+    }
+  });
+}
