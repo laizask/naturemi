@@ -71,9 +71,8 @@
                 <h3>brownie</h3>
                 <strong class="preco">R$12,00</strong>
                 </div>
-                <button class="comprar" 
-                onclick="adicionarItem('Brownie', 12)">
-                    Selecionar
+                <button class="comprar" data-nome="Brownie" data-preco="12">
+                Selecionar
                 </button>
 
                 <div class="controle-quantidade">
@@ -381,8 +380,6 @@
     </div>
 </section>
 
-</body>
-
 <div class="overlay" onclick="fecharCarrinho()"></div>
 
 <div class="painel-carrinho">
@@ -434,6 +431,7 @@
     <button class="finalizar-pedido" onclick="enviarIfood()">
     Pedir via ifood
   </button>
-    <script src="/pages/script.js"></script>
+    <script src="script.js"></script>
 </div>
+</body>
 </html>
